@@ -2,7 +2,7 @@
 rows = input('Введите размер матрицы A: ');
 cols = rows
 
-if rows !=0
+if rows ne 0
 % Инициализация пустой матрицы
 matrix = zeros(rows,cols);
 % Цикл для ввода каждого элемента матрицы
