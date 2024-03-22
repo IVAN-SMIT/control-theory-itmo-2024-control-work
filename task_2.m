@@ -85,8 +85,10 @@ if n ==2
     syms q1 q2 q3 q4 
     P = [q1 q2;
          q3 q4];
-    A*P -P*G
-    B*Y
+    disp('A*P -P*G')
+    disp(A*P -P*G)
+    disp('B*Y')
+    disp(B*Y)
     eq = A*P - P*G == B*Y;
     ss = solve(eq, P)
     P = [ss.q1 ss.q2; ss.q3 ss.q4]
@@ -99,8 +101,10 @@ if n ==2
     syms q1 q2 q3 q4 
     Q = [q1 q2;
          q3 q4];
-    G*Q -Q*A
-    Y*C
+    disp('G*Q -Q*A')
+    disp(G*Q -Q*A)
+    disp('Y*C')
+    disp(Y*C)
     eq = G*Q -Q*A == Y*C;
     ss = solve(eq, Q);
     Q = [ss.q1 ss.q2; ss.q3 ss.q4]
@@ -116,8 +120,10 @@ if n == 3
     P = [q1 q2 q3;
          q4 q5 q6;
          q7 q8 q9];
-    A*P -P*G
-    B*Y
+    disp('A*P -P*G')
+    disp(A*P -P*G)
+    disp('B*Y')
+    disp(B*Y)
     eq = A*P - P*G == B*Y;
     ss = solve(eq, P);
     P = [ss.q1 ss.q2 ss.q3; ss.q4 ss.q5 ss.q6; ss.q7 ss.q8 ss.q9]
@@ -130,8 +136,10 @@ if n == 3
     Q = [q1 q2 q3;
          q4 q5 q6;
          q7 q8 q9];
-    G*Q -Q*A
-    Y*C
+    disp('G*Q -Q*A')
+    disp(G*Q -Q*A)
+    disp('Y*C')
+    disp(Y*C)
     eq = G*Q -Q*A == Y*C;
     ss = solve(eq, Q);
     Q = [ss.q1 ss.q2 ss.q3; ss.q4 ss.q5 ss.q6; ss.q7 ss.q8 ss.q9]
